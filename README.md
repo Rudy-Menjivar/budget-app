@@ -3,8 +3,8 @@
 
 
 ## Description
-    
-Budget-App is designed to allow for offline access and functionality. Expenses and deposits can be added with or without a connection, to reliably keep budget on track.
+
+Budget-App allows for offline access and functionality to reliably keep the budget on track. Expenses and deposits can be added with or without an internet connection. 
 
 When transactions are entered offline, they will populate the total once online again.
 
