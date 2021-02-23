@@ -81,5 +81,8 @@ Licensed under the [MIT](./LICENSE.txt) license.
   
 
 ## Questions
-  
-If you have any questions, then feel free to contact me at rudy.menjivar@gmail.com. You may also access my complete work at [GitHub](https://github.com/Rudy-Menjivar).
+
+If you have any questions then feel free to contact me, and you can find my complete work at GitHub.
+
+* <a href="mailto:rudy.menjivar@gmail.com">Email</a>
+* <a href="https://github.com/Rudy-Menjivar" target="_blank">GitHub</a>
