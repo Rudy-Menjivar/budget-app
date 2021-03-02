@@ -7,3 +7,16 @@ window.IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.ms
 if (!window.indexedDB) {
     console.log("Your browser doesn't support a stable version of IndexedDB.");
 };
+
+// open database & request generated saved to db
+let db;
+const request = indexedDB.open("budgetApp", 1);
+// Console the request.errorCode!
+request.onerror = function(event) {  
+    console.error("Database error: " + event.target.errorCode);
+};
+    // Do something with request.result!
+request.onsuccess = function(event) {
+    db = event.target.result;
+    console.log(db);
+};
