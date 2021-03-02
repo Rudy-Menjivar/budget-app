@@ -26,3 +26,10 @@ request.onerror = function(event) {
 request.onsuccess = function(event) {
     db = event.target.result;
 };
+
+// Add data to database with readwrite flag
+function saveRecord(record) {
+    const transaction = db.transaction(["pending"], "readwrite");
+    const store = transaction.objectStore("pending");
+    store.add(record);
+};
