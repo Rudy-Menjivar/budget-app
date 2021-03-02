@@ -12,6 +12,12 @@ if (!window.indexedDB) {
 let db;
 const request = indexedDB.open("budgetApp", 1);
 
+// onupgradeneeded will trigger when new db is created or ver changes
+request.onupgradeneeded = ({ target }) => {
+    const db = target.result;
+    db.createObjectStore("pending", { autoIncrement: true });
+};
+
 // Error & Success Handlers
 request.onerror = function(event) {  
     console.error("Database error: " + event.target.errorCode);
