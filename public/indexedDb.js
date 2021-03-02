@@ -61,4 +61,6 @@ function getPending() {
             });
         }
     };
-}
+};
+// if online then load getPending
+window.addEventListener("online", getPending);
