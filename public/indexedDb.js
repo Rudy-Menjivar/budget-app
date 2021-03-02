@@ -8,15 +8,15 @@ if (!window.indexedDB) {
     console.log("Your browser doesn't support a stable version of IndexedDB.");
 };
 
-// open database & request generated saved to db
+// open database, name it & list database version (db schema)
 let db;
 const request = indexedDB.open("budgetApp", 1);
-// Console the request.errorCode!
+
+// Error & Success Handlers
 request.onerror = function(event) {  
     console.error("Database error: " + event.target.errorCode);
 };
-    // Do something with request.result!
+    // Request generated is saved to db
 request.onsuccess = function(event) {
     db = event.target.result;
-    console.log(db);
 };
