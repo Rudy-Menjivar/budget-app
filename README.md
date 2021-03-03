@@ -18,6 +18,8 @@ When transactions are entered offline, they will populate the total once online 
 
 * [Installation](#installation)
 
+* [Deployment](#Deployment)
+
 * [Usage](#usage)
 
 * [Contributing](#contributing)
@@ -34,6 +36,26 @@ Run the following command to install the required dependencies:
 npm i
 ```
 
+
+## Deployment
+
+Deployment involves creating a database with MongoDB Atlas and hosting the site with Heroku.
+
+### Create your database
+
+Navigate to the [MongoDB Atlas dashboard](https://cloud.mongodb.com) to manage your database.
+
+1. First, select **Clusters** and create a new cluster if one hasn't been created yet.
+
+2. Then, create your database by selecting **Collections** and select **Create Database**.
+
+3. Name your database as well as your collection and create it
+
+4. Select **Clusters** again, select **Connect** and select **Connect your application**
+
+5. Copy your connection string, then enter your database user/admin, replace the <password> with your password, *myFirstDatabase* with your database name
+
+* Save your connection string to enter it as the **Value** within Heroku's settings (more on that shortly)
 
 ## Usage
 
