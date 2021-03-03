@@ -8,6 +8,7 @@ Budget-App allows for offline access and functionality to reliably keep the budg
 
 When transactions are entered offline, they will populate the total once online again.
 
+<a href="https://dry-caverns-42087.herokuapp.com/" target="_blank"><img src="./public/images/preview.png"></a>
 
 ## Content
 
